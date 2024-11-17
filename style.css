@@ -1,0 +1,574 @@
+:root {
+    /* --main-font: "Crimson Pro", serif; */
+    /* 200 - 900 & i */
+    --brand-green: #00856F;
+    --brand-green-light: #DCE9E2;
+    --brand-green-light-02: #F7F9F9;
+    --brand-beige: #FFFAF1;
+    --brand-green-hover: #00453A;
+    --gray-headline: #061800;
+    --gray-paragraph: #384633;
+    --white: #3E3E3E;
+    --xl: 1920px;
+    --lg: 1280px;
+    --md: 960px;
+    --sm: 600px;
+    --xs: 320px;
+    --tc: color 0.3s;
+    --ta: all 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header 
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+header .header-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    background-color: var(--brand-green);
+    height: 60px;
+    color: #F7F9F9;
+}
+
+header .header-box span {
+    font-size: 24px;
+}
+
+header .header-box ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .header-box ul li {
+    padding: 18px;
+    font-size: 18px;
+}
+
+header .header-box ul li:hover {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+header .header-box ul li:not(:first-child) {
+    opacity: 50%;
+}
+
+header .header-box ul li:first-child {
+    border-bottom: 2px solid #F7F9F9;
+}
+
+header .header-box button {
+    background-color: var(--brand-green);
+    color: #F7F9F9;
+    border-radius: 20px;
+    border: 1px solid #F7F9F9;
+    width: 200px;
+    height: 30px;
+}
+
+header .header-box button:hover {
+    color: var(--brand-green);
+    background-color: #F7F9F9;
+}
+
+header-end */
+
+.top {
+    background-color: var(--brand-green-light);
+    max-width: var(--xl);
+    margin: 0 auto;
+    min-width: var(--xs);
+}
+
+.top .head-box .main-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: var(--brand-green);
+    align-items: center;
+    height: 60px;
+}
+
+.top .head-box .main-header span {
+    font-size: 24px;
+}
+
+.top .head-box .main-header .dark {
+    color: var(--gray-headline);
+}
+
+.top .head-box .main-header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 18px;
+}
+
+.top .head-box .main-header ul li {
+    padding: 20px;
+}
+
+.top .head-box .main-header ul li:nth-child(1) {
+    font-weight: bolder;
+    border-bottom: 2px solid var(--brand-green);
+}
+
+.top .head-box .main-header button {
+    color: var(--brand-green);
+    border: 1px solid var(--brand-green);
+    border-radius: 20px;
+    width: 190px;
+    height: 35px;
+    background-color: var(--brand-green-light);
+    font-weight: 800;
+}
+
+.top .head-box .assistance {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.top .head-box .assistance .assistance_left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 10%;
+    margin-top: -40px;
+}
+
+.top .head-box .assistance .assistance_left p {
+    padding-right: 15%;
+}
+
+.top .head-box .assistance .assistance_left button {
+    width: 250px;
+    background-color: var(--brand-green);
+    color: #F7F9F9;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.top .head-box .assistance .assistance_left button svg  {
+    fill: #F7F9F9;
+}
+
+.top .head-box .assistance .assistance_left button:hover  {
+    background: #F7F9F9;
+    color: var(--brand-green);
+    cursor: pointer;
+}
+
+.top .head-box .assistance .assistance_left button:hover svg {
+    fill: var(--brand-green);
+}
+
+.top .head-box .assistance .assistance_left h5 {
+    color: var(--brand-green);
+}
+
+.top .head-box .assistance .assistance_left h1 {
+    font-size: 52px;
+}
+
+.top .head-box img {
+    height: 600px;
+    width: 100%;
+}
+
+.crossed { 
+    background-color: var(--brand-beige);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: -70px;
+    position: relative;
+    z-index: 1;
+}
+
+.crossed .crossed-box {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .case { visibility: visible;
+        
+    }
+
+    .top .head-box .main-header .for-mobile {
+        justify-content: space-between;
+    }
+
+    .top .head-box .main-header {
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+
+    .top .head-box .main-header button {
+        visibility: hidden;
+    }
+
+    .top .head-box .main-header ul {
+        visibility: hidden;
+    }
+
+    .top .head-box .assistance h5 {
+        margin-left: -110px;
+        margin-bottom: -30px;
+    }
+
+    .top .head-box .assistance h1 {
+        margin-right: 160px;
+        flex-wrap: wrap;
+    }
+
+    .top .head-box .assistance button {
+        margin-left: 30px;
+    }
+
+    .top .head-box .assistance p {
+        margin-right: 80px;
+        flex-wrap: wrap;
+    }
+
+    .top .head-box .assistance {
+        flex-wrap: wrap;
+        width: 450px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .top {
+        height: 1100px;
+        margin-bottom: -150px;
+    }
+
+    .crossed {
+        height: 300px;
+        margin-top: -10px;
+    }
+
+    .crossed .crossed-box h3 {
+        text-align: center;
+    }
+
+    .crossed .crossed-box p {
+        text-align: center;
+    }
+
+    .list {
+        margin-top: -150px;
+    }
+}
+
+.crossed .crossed-box h3 {
+    font-size: 48px;
+}
+
+.crossed .crossed-box p {
+    color: var(--brand-green);
+} 
+
+@media screen and (min-width: 1000px) {
+    .case {
+        visibility: hidden;
+    }
+
+    .crossed .crossed-box .right-border {
+        border-right: 1px solid var(--brand-green);
+        padding-right: 10%;
+    }
+
+    .crossed .crossed-box .left-border {
+        border-left: 1px solid var(--brand-green);
+        padding-left: 10%;
+    }
+
+    .list {
+        margin-top: -85px;
+    }
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--brand-green-light-02);
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list .list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 200px;
+}
+
+.list .list-box .list-upper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.list .list-box .list-upper h6 {
+    color: var(--brand-green);
+}
+
+.list .list-box .list-upper h2 {
+    font-size: 40px;
+    width: 25%;
+    min-width: 400px;
+}
+
+.list .list-box .list-boxes {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list .list-box .list-boxes div {
+    display: flex;
+    width: 30%;
+    min-width: 275px;
+    height: 250px;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid var(--gray-headline);
+    border-radius: 10px;
+    align-content: center;
+    margin-top: 50px;
+    background-color: white;
+    border: 0;
+    box-shadow: 2px 2px 2px var(--brand-green-light);
+    padding: 30px;
+}
+
+.list .list-box .list-boxes div span {
+    border-radius: 50%;
+    background-color: var(--brand-green-light);
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    color: var(--brand-green);
+}
+
+.list .list-box .list-boxes div h3 {
+    font-size: 24px;
+}
+
+.list .list-box .list-boxes div p {
+    width: 100%;
+    min-width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.some-giberish {
+    background-color: var(--brand-beige);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.some-giberish .giberish-box {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap-reverse;
+}
+
+.some-giberish .giberish-box img {
+    width: 42%;
+    height: 40%;
+    min-height: 275px;
+    min-width: 275px;
+}
+
+.some-giberish .giberish-box .giberish-text {
+    width: 50%;
+    min-width: 275px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.some-giberish .giberish-box .giberish-text {
+    line-height: 1.4;
+}
+
+.some-giberish .giberish-box .giberish-text h6 {
+    color: var(--brand-green);
+}
+
+.some-giberish .giberish-box .giberish-text h2 {
+    font-size: 40px;
+    width: 60%;
+    min-width: 275px;
+}
+
+/* imported */
+
+main .virtual-health {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+main .virtual-health .virtual-health-box {
+    max-width: var(--lg);
+    text-align: left;
+    width: 475px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .virtual-health .virtual-health-box p {
+    display: flex;
+    font-size: 18px;
+    opacity: 50%;
+    gap: 5px;
+}
+
+main .virtual-health .contact-img-box img {
+    width: 80%;
+    height: 500px;
+    min-height: 300px;
+    min-width: 375px;
+}
+
+main .virtual-health .virtual-health-box p img {
+    width: 20px;
+    fill: white;
+}
+
+main .virtual-health .virtual-health-box h1 {
+    font-size: 36px;
+}
+
+main .virtual-health .virtual-health-box button {
+    display: flex;
+    background-color: var(--brand-green);
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+    width: 300px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .virtual-health .virtual-health-box button:hover {
+    display: flex;
+    background-color: var(--brand-green-hover);
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+    width: 300px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .virtual-health .virtual-health-box button svg {
+    fill: white;
+}
+
+main .virtual-health .virtual-health-box button img {
+    width: 25px;
+}
+
+.footeris {
+    background-color: var(--brand-green);
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footeris .footeris-box {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footeris .footeris-box .footeris-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footeris .footeris-box .footeris-left span {
+    font-size: 48px;
+}
+
+.footeris .footeris-box .footeris-right {
+    word-spacing: 15px;
+    margin-top: 20px;
+}
